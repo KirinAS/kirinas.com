@@ -1,3 +1,4 @@
+<?php require_once('settings.php'); ?>
 </div>
 
 <div id="footer">
@@ -19,7 +20,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-46701105-1', 'kirinas.com');
+  ga('create', '<?php print $ga_tracking_id ?>', 'kirinas.com');
   ga('send', 'pageview');
 
 </script>
@@ -27,7 +28,6 @@
 </body>
 </html>
 <?php
-require_once('settings.php');
 $ip = ip2long($_SERVER['REMOTE_ADDR']);
 
 $db = new mysqli($db_host, $db_username, $db_password, $db_name);

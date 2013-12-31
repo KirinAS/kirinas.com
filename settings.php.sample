@@ -1,7 +1,10 @@
 <?php
 // Database settings
 $db_host = 'localhost'; // Host where MySQL database resides; localhost for most cases
-$db_name = 'db_name'; // Name of database
 $db_username = 'db_username'; // Database username
 $db_password = 'db_password'; // Database password
+$db_name = 'db_name'; // Name of database
+
+// Google Analytics tracking id
+$ga_tracking_id = 'UA-99999999-9';
 ?>
