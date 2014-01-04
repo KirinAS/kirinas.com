@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="/favicon.ico">
 
 <?php
-if (isset($_SERVER['REDIRECT_STATUS'])) {
+if (isset($_SERVER['REDIRECT_STATUS']) && $_SERVER['REDIRECT_STATUS'] != 200) {
 ?>
 <title>Error <?php print $_SERVER['REDIRECT_STATUS']; ?></title>
 <?php

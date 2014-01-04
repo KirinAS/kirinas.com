@@ -3,7 +3,7 @@
 
 <div id="footer">
 <div class="container">
-<p class="text-muted credit">All copyright belongs to KeyEast Entertainment, JYP Entertainment, and CJ Media. This is a fan made Dream High site.</p>
+<p class="text-muted credit">No copyright infringment intended. All copyright belongs to KBS, KBS America, KeyEast Entertainment, JYP Entertainment, and CJ Media. This is a fan made Dream High site.</p>
 </div>
 </div>
 
@@ -33,7 +33,6 @@ $ip = ip2long($_SERVER['REMOTE_ADDR']);
 $db = new mysqli($db_host, $db_username, $db_password, $db_name);
 
 $result = $db->query("INSERT INTO `hits` VALUES (" . $ip . ", 1) ON DUPLICATE KEY UPDATE count=count + 1");
-$result->close();
 
 $db->close();
 ?>
