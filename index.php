@@ -29,7 +29,7 @@
 <p><strong>Preceded by:</strong> Marry Me, Mary!</p>
 <p><strong>Followed by:</strong> Detectives in Trouble</p>
 <p><strong>Related show:</strong> Dream High 2</p>
-*information courtesy <a href="//en.wikipedia.org/wiki/Dream_High">Wikipedia</a>
+<p class="text-muted">*information courtesy <a href="//en.wikipedia.org/wiki/Dream_High">Wikipedia</a></p>
 
 </div>
 
