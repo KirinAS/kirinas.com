@@ -6,11 +6,11 @@
 <h1>Kirin Art School</h1>
 </div>
 
-<p>Producers: Bae Yong-joon, Park Jin-young</p>
-<p>Location: Seoul, South Korea</p>
-<p>Running time: Mondays and Tuesdays at 21:55 (9:55 PM) KST</p>
-<p>Production companies: KeyEast Entertainment, JYP Entertainment, CJ Media</p>
-<p>Distributor: Korean Broadcasting System (KBS)</p>
+<p><strong>Producers:</strong> Bae Yong-joon, Park Jin-young</p>
+<p><strong>Location:</strong> Seoul, South Korea</p>
+<p><strong>Running time:</strong> Mondays and Tuesdays at 21:55 (9:55 PM) KST</p>
+<p><strong>Production companies:</strong> KeyEast Entertainment, JYP Entertainment, CJ Media</p>
+<p><strong>Distributor:</strong> Korean Broadcasting System (KBS)</p>
 
 </div>
 
