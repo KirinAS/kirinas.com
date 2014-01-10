@@ -7,6 +7,5 @@
 </div>
 <p class="lead">Error <?php print $_SERVER['REDIRECT_STATUS']; ?></p>
 </div>
-</div>
 
 <?php include_once("footer.php"); ?>
