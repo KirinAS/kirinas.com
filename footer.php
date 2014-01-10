@@ -28,7 +28,7 @@
 </body>
 </html>
 <?php
-$ip = ip2long($_SERVER['REMOTE_ADDR']);
+$ip = ip2long($_SERVER[$proxy]);
 
 $db = new mysqli($db_host, $db_username, $db_password, $db_name);
 

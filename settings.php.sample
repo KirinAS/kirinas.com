@@ -7,4 +7,7 @@ $db_name = 'db_name'; // Name of database
 
 // Google Analytics tracking id
 $ga_tracking_id = 'UA-99999999-9';
+
+// Variable to get real IP of visitor
+$proxy = 'HTTP_X_FORWARDED_FOR';
 ?>
