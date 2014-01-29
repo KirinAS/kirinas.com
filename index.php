@@ -16,7 +16,7 @@
 <p><strong>Country of origin:</strong> South Korea
 <p><strong>Original language:</strong> Korean
 <p><strong>Number of seasons:</strong> 1</p>
-<p><strong>Number of episodes:</strong> 16 (1 special)</p>
+<p><strong>Number of episodes:</strong> 16 + 1 special (17 total)</p>
 <p><strong>Producers:</strong> Bae Yong-joon, Park Jin-young</p>
 <p><strong>Location:</strong> Seoul, South Korea</p>
 <p><strong>Running time:</strong> Mondays and Tuesdays at 21:55 (9:55 PM) KST</p>
