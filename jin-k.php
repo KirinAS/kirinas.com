@@ -5,7 +5,7 @@
 <div class="page-header">
 <h1>Kirin Art School</h1>
 </div>
-Taecyeon as Jin-guk/Hyun Shi-hyuk
+Ok Taecyeon as Jin-guk/Hyun Shi-hyuk
 </div>
 
 <?php include_once("footer.php"); ?>
