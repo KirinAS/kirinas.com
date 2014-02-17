@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Kirin Art School Homepage">
-<meta name="author" content="">
+<meta name="description" content="Kirin Art School">
+<meta name="author" content="Kirin Art School">
 <link rel="shortcut icon" href="/favicon.ico">
 
 <?php
