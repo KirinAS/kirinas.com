@@ -54,12 +54,12 @@ if (isset($_SERVER['REDIRECT_STATUS']) && $_SERVER['REDIRECT_STATUS'] != 200) {
 </div>
 <div class="collapse navbar-collapse">
 <ul class="nav navbar-nav">
-<li class="active"><a href="/">Home</a></li>
-<li><a href="/goham">Go Hye Mi</a></li>
-<li><a href="/ssd">Song Sam Dong</a></li>
-<li><a href="/jin-k">Jin Guk/Hyun Shi Hyuk</a></li>
-<li><a href="/ybh">Yoon Baek Hee</a></li>
-<li><a href="/IU">Kim Pil Sook</a></li>
+<li <?php if ($_SERVER['REQUEST_URI'] == "/") { ?>class="active"<?php } ?>><a href="/">Home</a></li>
+<li <?php if ($_SERVER['REQUEST_URI'] == "/goham") { ?>class="active"<?php } ?>><a href="/goham">Go Hye Mi</a></li>
+<li <?php if ($_SERVER['REQUEST_URI'] == "/ssd") { ?>class="active"<?php } ?>><a href="/ssd">Song Sam Dong</a></li>
+<li <?php if ($_SERVER['REQUEST_URI'] == "/jin-k") { ?>class="active"<?php } ?>><a href="/jin-k">Jin Guk/Hyun Shi Hyuk</a></li>
+<li <?php if ($_SERVER['REQUEST_URI'] == "/ybh") { ?>class="active"<?php } ?>><a href="/ybh">Yoon Baek Hee</a></li>
+<li <?php if ($_SERVER['REQUEST_URI'] == "/IU") { ?>class="active"<?php } ?>><a href="/IU">Kim Pil Sook</a></li>
 </ul>
 </div><!--/.nav-collapse -->
 </div>
