@@ -3,7 +3,9 @@
 
 <div id="footer">
 <div class="container">
-<p class="text-muted credit">No copyright infringment intended. All copyright belongs to KBS, KBS America, KeyEast Entertainment, JYP Entertainment, and CJ Media. This is a fan made Dream High site.</p>
+<p class="text-muted credit">
+Respective copyright belongs to KBS, KBS America, KeyEast Entertainment, JYP Entertainment, and CJ Media. This is a fan made Dream High site. Source code located at <a href="https://github.com/KirinAS/kirinas.com">GitHub</a>.
+</p>
 </div>
 </div>
 
