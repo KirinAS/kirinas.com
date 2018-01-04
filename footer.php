@@ -34,7 +34,7 @@ $ip = ip2long($_SERVER[$proxy]);
 
 $db = new mysqli($db_host, $db_username, $db_password, $db_name);
 
-$result = $db->query("INSERT INTO `hits` VALUES (" . $ip . ", 1) ON DUPLICATE KEY UPDATE count=count + 1");
+$result = $db->query("INSERT INTO `hits` (ip, count) VALUES (" . $ip . ", 1) ON DUPLICATE KEY UPDATE count=count + 1");
 
 $db->close();
 ?>
