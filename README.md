@@ -1,7 +1,7 @@
 kirinas.com
 ===========
 
-Kirin Art School Web Page
+Kirin Art School Web Page, from Dream High and Dream High 2
 
 How to use
 ==========
