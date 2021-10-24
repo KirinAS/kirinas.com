@@ -1,13 +1,18 @@
-<?php require_once('settings.php'); ?>
+<?php
+require_once('settings.php');
+>?
 </div>
 
-<div id="footer">
+<footer class="footer">
 <div class="container">
 <p class="text-muted credit">
-Respective copyright belongs to KBS, KBS America, KeyEast Entertainment, JYP Entertainment, and CJ Media. This is a fan made Dream High site. Source code located at <a href="https://github.com/KirinAS/kirinas.com" target="_blank">GitHub</a>.
+Respective trademarks/copyright belong to KBS, KBS America, KeyEast Entertainment, JYP Entertainment, and CJ Media. This is a fan made site.
+</p>
+<p class="text-muted credit">
+Source code located at <a href="https://github.com/KirinAS/kirinas.com" target="_blank">GitHub</a>.
 </p>
 </div>
-</div>
+</footer>
 
 
 <!-- Bootstrap core JavaScript
@@ -32,9 +37,15 @@ Respective copyright belongs to KBS, KBS America, KeyEast Entertainment, JYP Ent
 <?php
 $ip = ip2long($_SERVER[$proxy]);
 
-$db = new mysqli($db_host, $db_username, $db_password, $db_name);
+#$db = new mysqli($db_host, $db_username, $db_password, $db_name);
+$db = new SQLite3("/home/waf/kirinas.com/kirinas.sqlite");
 
-$result = $db->query("INSERT INTO `hits` (ip, count) VALUES (" . $ip . ", 1) ON DUPLICATE KEY UPDATE count=count + 1");
+#$result = $db->query("INSERT INTO `hits` (ip, count) VALUES (" . $ip . ", 1) ON DUPLICATE KEY UPDATE count=count + 1");
+$stmt = $db->prepare("INSERT INTO visits (ip, count) VALUES (:ip, 0) ON CONFLICT(ip) DO UPDATE SET count = count + 1;");
+$stmt->bindParam(":ip", $ip, SQLITE3_INTEGER);
+$result = $stmt->execute();
+print_r($result);
 
+$stmt->close();
 $db->close();
 ?>
