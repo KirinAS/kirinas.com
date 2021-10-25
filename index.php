@@ -1,4 +1,15 @@
-<?php include_once("header.php"); ?>
+<?php
+$links = [
+  "/" => "Home",
+  "/goham" => "Go Hye Mi",
+  "/ssd" => "Song Sam Dong",
+  "/jin-k" => "Jin Guk/Hyun Shi Hyuk",
+  "/ybh" => "Yoon Baek Hee",
+  "/IU" => "Kim Pil Sook",
+];
+
+include_once("common/header.php");
+?>
 
 <!-- Begin page content -->
 <div class="container">
@@ -6,29 +17,40 @@
 <h1>Kirin Art School</h1>
 </div>
 
-<p><strong>Genre:</strong> Comedy Romance Music</p>
-<p><strong>Format:</strong> Television series</p>
-<p><strong>Written by:</strong> Park Hye-ryun</p>
-<p><strong>Directed by:</strong> Lee Eung-bok</p>
-<p><strong>Starring:</strong> Bae Suzy, Kim Soo-hyun, Ok Taecyeon, Ham Eunjung, Jang Wooyoung, IU</p>
-<p><strong>Opening theme:</strong> Dream High</p>
-<p><strong>Ending theme:</strong> Only Hope</p>
-<p><strong>Country of origin:</strong> South Korea
-<p><strong>Original language:</strong> Korean
-<p><strong>Number of seasons:</strong> 1</p>
-<p><strong>Number of episodes:</strong> 16 + 1 special (17 total)</p>
-<p><strong>Producers:</strong> Bae Yong-joon, Park Jin-young</p>
-<p><strong>Location:</strong> Seoul, South Korea</p>
-<p><strong>Running time:</strong> Mondays and Tuesdays at 21:55 (9:55 PM) KST</p>
-<p><strong>Production companies:</strong> KeyEast Entertainment, JYP Entertainment, CJ Media</p>
-<p><strong>Distributor:</strong> Korean Broadcasting System (KBS)</p>
-<p><strong>Original broadcast channel:</strong> KBS2</p>
-<p><strong>Picture format:</strong> 480i SDTV, 1080i HDTV</p>
-<p><strong>Audio format:</strong> Dolby Digital, DTS Digital Sound, Sony Dynamic Digital Sound</p>
-<p><strong>Original run:</strong> 3 January 2011 &mdash; 28 February 2011</p>
-<p><strong>Preceded by:</strong> Marry Me, Mary!</p>
-<p><strong>Followed by:</strong> Detectives in Trouble</p>
-<p><strong>Related show:</strong> Dream High 2</p>
+<?php
+$datas = [
+  "Genre" => "Comedy Romance Music",
+  "Format" => "Television series",
+  "Written by" => "Park Hye-ryun",
+  "Directed by" => "Lee Eung-bok",
+  "Starring" => "Bae Suzy, Kim Soo-hyun, Ok Taecyeon, Ham Eunjung, Jang Wooyoung, IU",
+  "Opening theme" => "Dream High",
+  "Ending theme" => "Only Hope",
+  "Country of origin" => "South Korea",
+  "Original language" => "Korean",
+  "Number of seasons" => "1",
+  "Number of episodes" => "16 + 1 special (17 total)",
+  "Producers" => "Bae Yong-joon, Park Jin-young",
+  "Location" => "Seoul, South Korea",
+  "Running time" => "Mondays and Tuesdays at 21:55 (9:55 PM) KST",
+  "Production companies" => "KeyEast Entertainment, JYP Entertainment, CJ Media",
+  "Distributor" => "Korean Broadcasting System (KBS)",
+  "Original broadcast channel" => "KBS2",
+  "Picture format" => "480i SDTV, 1080i HDTV",
+  "Audio format" => "Dolby Digital, DTS Digital Sound, Sony Dynamic Digital Sound",
+  "Original run" => "3 January 2011 &mdash; 28 February 2011",
+  "Preceded by" => "Marry Me, Mary!",
+  "Followed by" => "Detectives in Trouble",
+  "Related show" => "Dream High 2",
+];
+?>
+<?php
+foreach ($datas as $label => $data) {
+?>
+<p><strong><?php echo $label; ?>:</strong> <?php echo $data; ?></p>
+<?php
+}
+?>
 <p class="text-muted">*information courtesy <a href="//en.wikipedia.org/wiki/Dream_High">Wikipedia</a></p>
 
 </div>

@@ -1,6 +1,6 @@
 <?php
 require_once('settings.php');
->?
+?>
 </div>
 
 <footer class="footer">
@@ -44,7 +44,6 @@ $db = new SQLite3("/home/waf/kirinas.com/kirinas.sqlite");
 $stmt = $db->prepare("INSERT INTO visits (ip, count) VALUES (:ip, 0) ON CONFLICT(ip) DO UPDATE SET count = count + 1;");
 $stmt->bindParam(":ip", $ip, SQLITE3_INTEGER);
 $result = $stmt->execute();
-print_r($result);
 
 $stmt->close();
 $db->close();
