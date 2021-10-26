@@ -1,4 +1,6 @@
-<?php include_once("header.php"); ?>
+<?php
+include_once("common-header.php");
+?>
 
 <!-- Begin page content -->
 <div class="container">
@@ -8,4 +10,6 @@
 Bae Suzy as Go Hye Mi
 </div>
 
-<?php include_once("footer.php"); ?>
+<?php
+include_once("common-footer.php");
+?>
