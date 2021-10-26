@@ -1,4 +1,5 @@
 <?php
+$site = "Kirin Art School";
 $title = "Kirin Art School";
 
 $links = [
