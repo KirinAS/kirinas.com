@@ -1,6 +1,14 @@
 <?php
 $site = "Kirin Art School";
 $title = "Kirin Art School";
+$domain = "kirinas.com";
+$descriptions = [
+  "Kirin",
+  "Kirin Art",
+  "Kirin Art School",
+  "KirinAS",
+  "Dream High",
+];
 
 $links = [
   "/" => "Home",
