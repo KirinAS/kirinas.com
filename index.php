@@ -4,9 +4,9 @@ include_once("common-header.php");
 
 <!-- Begin page content -->
 <div class="container">
-<div class="page-header">
-<h1>Kirin Art School</h1>
-</div>
+  <div class="page-header">
+    <h1>Kirin Art School</h1>
+  </div>
 
 <?php
 $datas = [
@@ -38,12 +38,13 @@ $datas = [
 <?php
 foreach ($datas as $label => $data) {
 ?>
-<p><strong><?php echo $label; ?>:</strong> <?php echo $data; ?></p>
+  <p><strong><?php echo $label; ?>:</strong> <?php echo $data; ?></p>
 <?php
 }
 ?>
-<p class="text-muted">*information courtesy <a href="//en.wikipedia.org/wiki/Dream_High">Wikipedia</a></p>
-
+  <p class="text-muted">information retrieved from <a href="//en.wikipedia.org/wiki/Dream_High">Wikipedia</a></p>
+  <p class="text-muted">no changes were made from wikipedia</a>
+  <p class="text-muted">link to <a href="https://creativecommons.org/licenses/by-sa/3.0/">license text</a></p>
 </div>
 
 <?php
