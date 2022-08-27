@@ -42,8 +42,8 @@ foreach ($datas as $label => $data) {
 <?php
 }
 ?>
-  <p class="text-muted">information retrieved from <a href="//en.wikipedia.org/wiki/Dream_High">Wikipedia</a></p>
-  <p class="text-muted">no changes were made from wikipedia</a>
+  <p class="pt-5 text-muted">information retrieved from <a href="//en.wikipedia.org/wiki/Dream_High">Wikipedia</a></p>
+  <p class="text-muted">no changes were made from wikipedia article</a>
   <p class="text-muted">link to <a href="https://creativecommons.org/licenses/by-sa/3.0/">license text</a></p>
 </div>
 
