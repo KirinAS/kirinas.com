@@ -4,7 +4,7 @@ VERSION = $(file < VERSION)
 TAG = $(IMAGE):$(VERSION)
 DASH_TAG = $(IMAGE)-$(VERSION)
 
-all: build
+all: build upload-dockerhub
 
 full-test: build test
 
