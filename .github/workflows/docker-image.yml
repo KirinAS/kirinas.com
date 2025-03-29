@@ -1,6 +1,7 @@
 name: Docker Image CI
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - "main"
@@ -11,5 +12,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: create settings file
+      run: |
+        cp settings.php.sample settings.php
+    
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag kirinas:$(date +%s)
