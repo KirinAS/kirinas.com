@@ -6,6 +6,8 @@ on:
     branches:
       - "main"
 
+concurrency: "kirinas"
+
 jobs:
   build:
     runs-on: ubuntu-latest
