@@ -1,4 +1,4 @@
-FROM faww/waf-php-base:b0a7bcffc496d8cf777b2a81fd6e203950e96adb
+FROM faww/waf-php-base:26.29.101
 
 COPY src/ /app
 COPY settings.php /app
