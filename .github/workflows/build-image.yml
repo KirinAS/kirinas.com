@@ -15,9 +15,12 @@ jobs:
     steps:
     - uses: actions/checkout@v7
 
-    - name: create settings file
+    - name: setup repo
       run: |
         cp settings.php.sample settings.php
+        git submodule init
+        git submodule sync
+        git submodule update
     
     - name: Log in to Docker Hub
       uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
